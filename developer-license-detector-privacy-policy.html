@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Developer License Detector - A Chrome extension that detects open-source libraries and their licenses">
+    <title>Privacy Policy - Developer License Detector</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: #666;
+            font-size: 0.95em;
+            font-style: italic;
+        }
+
+        h2 {
+            color: #764ba2;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        .no-data-box {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        .no-data-box ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .no-data-box li::before {
+            content: "❌ ";
+            margin-right: 8px;
+        }
+
+        .permission-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .permission-box h4 {
+            color: #f57c00;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .permission-box p {
+            margin-bottom: 8px;
+        }
+
+        .permission-box strong {
+            color: #e65100;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .rights-list {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .rights-list li::before {
+            content: "✓ ";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <h2 style="border: none; color: #666; font-size: 1.3em; margin-top: 10px;">Developer License Detector</h2>
+            <p class="last-updated">Last Updated: December 21, 2025</p>
+        </header>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Developer License Detector ("we", "our", or "the extension") is committed to protecting your privacy. This privacy policy explains how our Chrome extension handles data when you use it to detect open-source libraries and their licenses on web pages.</p>
+        </section>
+
+        <section id="data-collection">
+            <h2>Data Collection and Usage</h2>
+
+            <h3>What Data We Collect</h3>
+            <p>Developer License Detector processes the following information <strong>locally on your device only</strong>:</p>
+
+            <ol>
+                <li>
+                    <strong>Web Page Content Analysis</strong>
+                    <ul>
+                        <li>HTML script tags and their source URLs</li>
+                        <li>Global JavaScript objects present on the page</li>
+                        <li>CSS link tags and stylesheet references</li>
+                        <li>Font library references</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Detection Results</strong>
+                    <ul>
+                        <li>Names and versions of detected libraries</li>
+                        <li>License information associated with detected libraries</li>
+                        <li>Detection timestamps and page URLs</li>
+                        <li>Library compatibility analysis results</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>User Settings</strong>
+                    <ul>
+                        <li>Your selected project license preference</li>
+                        <li>Extension configuration preferences</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>How We Use This Data</h3>
+            <p>All data processing occurs <strong>entirely on your local device</strong>. We use the collected data to:</p>
+            <ul>
+                <li>Identify open-source libraries present on web pages you visit</li>
+                <li>Analyze license compatibility with your project's license</li>
+                <li>Display detection results in the extension popup</li>
+                <li>Store your preferences for future sessions</li>
+            </ul>
+
+            <h3>Data Storage</h3>
+            <ul>
+                <li><strong>Local Storage Only</strong>: All data is stored locally in your browser using Chrome's storage API</li>
+                <li><strong>Per-Domain Storage</strong>: Detection results are stored per hostname for quick access</li>
+                <li><strong>User Control</strong>: You maintain full control over stored data and can clear it at any time through the extension</li>
+            </ul>
+        </section>
+
+        <section id="what-we-dont-do">
+            <h2>What We DO NOT Do</h2>
+            <div class="no-data-box">
+                <p>We want to be absolutely clear about what we <strong>do not</strong> do:</p>
+                <ul>
+                    <li><strong>No Data Transmission</strong>: We do not send any data to external servers</li>
+                    <li><strong>No Tracking</strong>: We do not track your browsing history or behavior</li>
+                    <li><strong>No Analytics</strong>: We do not collect usage statistics or analytics</li>
+                    <li><strong>No Third-Party Sharing</strong>: We do not share any information with third parties</li>
+                    <li><strong>No User Identification</strong>: We do not collect or store personally identifiable information</li>
+                    <li><strong>No Network Requests</strong>: The extension does not make any external network requests (except for loading web page resources that are already requested by the page itself)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="permissions">
+            <h2>Permissions Explanation</h2>
+            <p>The extension requires the following permissions to function:</p>
+
+            <div class="permission-box">
+                <h4>activeTab</h4>
+                <p><strong>Purpose:</strong> Allows the extension to read the content of the currently active tab when you click the extension icon</p>
+                <p><strong>Usage:</strong> Used to detect libraries on the page you're viewing</p>
+                <p><strong>Scope:</strong> Only accesses tabs when you explicitly invoke the extension</p>
+            </div>
+
+            <div class="permission-box">
+                <h4>storage</h4>
+                <p><strong>Purpose:</strong> Allows the extension to store detection results and user preferences</p>
+                <p><strong>Usage:</strong> Stores your settings and cached detection results locally in your browser</p>
+                <p><strong>Scope:</strong> All stored data remains on your device</p>
+            </div>
+
+            <div class="permission-box">
+                <h4>scripting</h4>
+                <p><strong>Purpose:</strong> Allows the extension to inject content scripts into web pages</p>
+                <p><strong>Usage:</strong> Enables library detection by analyzing page content</p>
+                <p><strong>Scope:</strong> Scripts run only to perform detection when you use the extension</p>
+            </div>
+
+            <div class="permission-box">
+                <h4>host_permissions: &lt;all_urls&gt;</h4>
+                <p><strong>Purpose:</strong> Allows the extension to work on any website you visit</p>
+                <p><strong>Usage:</strong> Necessary to detect libraries across all web pages</p>
+                <p><strong>Scope:</strong> The extension only activates when you choose to use it</p>
+            </div>
+        </section>
+
+        <section id="security">
+            <h2>Data Security</h2>
+            <div class="highlight-box">
+                <ul>
+                    <li>All data processing happens locally in your browser</li>
+                    <li>No data is transmitted over the network</li>
+                    <li>Your detection results and preferences are stored securely using Chrome's built-in storage mechanisms</li>
+                    <li>Data is isolated per-extension and cannot be accessed by other extensions or websites</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="retention">
+            <h2>Data Retention</h2>
+            <ul>
+                <li>Detection results are stored locally until you clear the extension's data or uninstall it</li>
+                <li>You can manually clear stored data through Chrome's extension settings</li>
+                <li>Uninstalling the extension automatically removes all stored data</li>
+            </ul>
+        </section>
+
+        <section id="third-party">
+            <h2>Third-Party Data</h2>
+            <p>The extension includes:</p>
+            <ul>
+                <li><strong>SPDX License Data</strong>: A local copy of SPDX license identifiers (public data)</li>
+                <li><strong>Known Library Patterns</strong>: A local database of library detection patterns (public data)</li>
+            </ul>
+            <p>This data is bundled with the extension and does not require external requests.</p>
+        </section>
+
+        <section id="children">
+            <h2>Children's Privacy</h2>
+            <p>Developer License Detector does not knowingly collect any information from anyone, including children under 13. The extension is designed for software developers and operates entirely locally.</p>
+        </section>
+
+        <section id="open-source">
+            <h2>Open Source</h2>
+            <p>Developer License Detector is open-source software licensed under GPL-3.0. You can review our source code to verify our privacy claims:</p>
+            <ul>
+                <li><strong>Repository</strong>: <a href="https://github.com/mustafaer/developer-license-detector" target="_blank">View on GitHub</a></li>
+                <li><strong>License</strong>: GNU General Public License v3.0</li>
+                <li><strong>Transparency</strong>: All code is publicly auditable</li>
+            </ul>
+        </section>
+
+        <section id="changes">
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this privacy policy from time to time. Any changes will be reflected in the "Last Updated" date at the top of this document. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you have questions or concerns about this privacy policy or the extension's privacy practices:</p>
+            <ul>
+                <li><strong>GitHub Issues</strong>: Please open an issue in our <a href="https://github.com/mustafaer/developer-license-detector/issues" target="_blank">GitHub repository</a></li>
+                <li><strong>License</strong>: Review our GPL-3.0 license in the LICENSE file</li>
+            </ul>
+        </section>
+
+        <section id="rights">
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul class="rights-list">
+                <li><strong>Access</strong>: Review what data is stored locally by inspecting Chrome's storage</li>
+                <li><strong>Deletion</strong>: Clear all stored data by removing the extension or clearing its data</li>
+                <li><strong>Control</strong>: Enable or disable the extension at any time</li>
+                <li><strong>Transparency</strong>: Review our open-source code to understand exactly what the extension does</li>
+            </ul>
+        </section>
+
+        <section id="compliance">
+            <h2>Compliance</h2>
+            <p>This extension is designed with privacy-by-design principles:</p>
+            <ul>
+                <li><strong>Data Minimization</strong>: We only process data necessary for functionality</li>
+                <li><strong>Local Processing</strong>: All operations occur on your device</li>
+                <li><strong>No Surveillance</strong>: We cannot and do not monitor your usage</li>
+                <li><strong>User Control</strong>: You maintain complete control over the extension</li>
+            </ul>
+        </section>
+
+        <section id="disclaimer">
+            <h2>Disclaimer</h2>
+            <p>Developer License Detector analyzes web pages to detect libraries and their licenses. While we strive for accuracy, the detection results are provided "as is" without warranties. Users should verify license information for critical decisions.</p>
+        </section>
+
+        <div class="summary-box">
+            <strong>Summary:</strong> Developer License Detector respects your privacy by processing all data locally on your device. We do not collect, transmit, or share any information. The extension is open-source, allowing full transparency into its operations.
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Developer License Detector Contributors</p>
+            <p>Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU General Public License v3.0</a></p>
+            <p><a href="https://github.com/mustafaer/developer-license-detector" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
